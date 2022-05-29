@@ -1,0 +1,242 @@
+\addcontentsline{toc}{chapter}{Front Matter}
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\addsec{Declaration of Originality}
+The material presented in this thesis is my own work, except where otherwise
+referenced or acknowledged.
+\\
+—\textbf{A. Freddie Page}, January 2016.
+
+\vspace{\fill}
+
+\addsec{Copyright Declaration}
+The copyright of this thesis rests with the author and is made available under a
+Creative Commons Attribution Non-Commercial No Derivatives licence.
+Researchers are free to copy, distribute or transmit the thesis on the condition
+that they attribute it, that they do not use it for commercial purposes and that
+they do not alter, transform or build upon it.
+For any reuse or redistribution, researchers must make clear to others the
+licence terms of this work.
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\clearpage
+
+\addsec{Abstract}
+\small
+
+By reducing the number of dimensions that light can propagate in from three to
+two, control over the properties of propagation can be achieved.
+The plasmonic modes of planar metal-dielectric heterostructures
+will confine light in one dimension, enhancing the
+electromagnetic fields within the structure.
+This thesis focuses on two particular aspects of active
+nanoplasmonics in planar systems, stopped light lasing and plasmons with gain in
+nonequilibrium graphene.
+
+For stopped-light lasing, a plasmonic waveguide mode is designed to have two
+points of zero group velocity in a narrow frequency range, in order to increase
+the local density of optical states that a gain medium can emit into.
+The two stopped light points form a band of slow light that supports a wide
+range of wavevectors, allowing localisation over a sub-wavelength gain medium
+and providing the feedback required for lasing.
+This results in a new type of laser that does not rely on predefined cavity
+modes, in fact is cavity-free in \twod, dynamically forming its lasing mode
+about a locally pumped region of carrier inversion.
+
+Graphene, a single-atom thick semimetal, provides the ultimate miniaturisation
+as a truly \twod material.
+It is shown that graphene can support plasmons with gain, under realistic
+conditions of collision loss, temperature, doping, and carrier relaxation via
+amplified spontaneous emission.
+This is made possible by developing a scheme to evaluate polarisabilities
+for nonequilibrium carrier distributions, allowing the calculation of the exact
+\rpa complex-frequency plasmon dispersion solutions.
+The rates of spontaneous emission are calculated and are critically dependant on
+the exact dispersion relation.
+The instantaneous rates are found to be 5 times faster than previously reported
+and, when coupled with phonons, lead to carrier relaxations on $100\fs$
+timescales.
+The polarisability and relaxation rates must form the basis of any active
+graphene device, where electromagnetic energy is coupled to an evolving
+electronic system.
+
+
+\normalsize
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\clearpage
+
+\addsec{Acknowledgements}
+I'd like to give thanks to the following people who have all, either directly or
+indirectly, supported me during my \phd:
+
+Firstly, Prof. Ortwin Hess for supervising the project and giving me the
+opportunity to study in the group at Imperial College London;
+My collaborators at Imperial:
+Andreas Pusch, Fouad Ballout, Kosmas Tsakmakidis, Sebastian Wüstner, and
+Tim Pickering.
+Though I would like to particularly thank Joachim Hamm for mentoring me,
+providing endless advice and guidance, and generally being great fun to work
+with;
+Friends in and around the group not mentioned above:
+Anne-Julie, Doris, Fabian, James, John, Ollie, Peter, Peter, Stephanie,
+Seungbum, Tristan, Zara, and Zeph;
+House mates, first at Mayton Street:
+Claire, Liz, Sarah, and Karla who definitely followed \emph{me} to Imperial.
+Then at Beit Hall:
+Andreas, Anne, Alex, Deborah, Elly, Ling, Lucia, Nathalie, Sam, Sarahs, and
+Savvas;
+Band mates in \emph{Filthy Strings}: Amanda, Edwin, Michael, Michael,
+Norbert, and Sam;
+And to my family: Julie, Ian, Sammy, June and John, Lucinda, and Russell and
+Tom, for bearing with me.
+Finally, a special thanks goes to everyone who proof-read sections of the
+thesis:
+Andreas, Doris, Joachim, and Nathalie.
+
+%%% All got to fit on one page so fuck formatting!!
+
+\addsec{Epigraph}
+\begin{displayquote}
+This little inquiry has fused.\\
+It is now growing faster than the speed of bloody light.\\
+It's not going to be something that we can see from space,\\
+It's going to \emph{be} space!
+\end{displayquote}
+—\textbf{Stewart Pearson}, \emph{The Thick of It}
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\clearpage
+
+\addsec{Preface to the \emph{Doctor’s Edition}}
+Since passing my viva voce defense and submitting the “final” copy of my thesis,
+I have used the document as a work of reference as a research associate.
+As such, I've found cause to update certain sections, either to add short
+related results, in some cases to change convention uses, and indeed to correct
+minor mistakes spotted since submission.
+
+The larger edits have concerned the transfer matrix method in the \emph{Theory
+and Methods} section.
+Specifically making the eigenvalue equation more succinct, and putting
+transverse electric and magnetic solutions on the same footing by
+placing focus on in-plane electric fields.
+
+The result is this document, which I refer to, with tongue-in-cheek, as the
+\emph{Doctor's Edition}.
+It has not undergone further examination, and the original edition remains
+availible online\footnote{At
+\href{https://spiral.imperial.ac.uk:8443/handle/10044/1/30760}{
+https://spiral.imperial.ac.uk:8443/handle/10044/1/30760}}.
+
+For this edition I would like to thank Nuttawut and Illya who spotted a number
+of the mistakes.
+And to give particular thanks to Prof. Anatoly Zayats and Prof. Stefan Maier for
+taking the time to read my thesis and conduct my viva.
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\clearpage
+\addcontentsline{toc}{section}{Contents}
+\tableofcontents
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\clearpage
+\listoffigures
+\listoftables
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\clearpage
+\let\defaultchaptermarkformat=\chaptermarkformat
+\renewcommand*{\chaptermarkformat}{}
+\addsec{Abbreviations, Acronyms, and Initialisms}
+\chaptermark{Abbreviations, Acronyms, and Initialisms}
+
+\begin{longtable}{ l l l }
+Abbr. & Abbreviation & First use \\ \hline
+\twod & Two dimensional \df & \sec{intro} \\
+\threefive & Groups three and five (semiconductor) \df & \sec{plasSLS} \\
+\ar & Auger recombination \df & \sec{grIntro} \\
+\ase & Amplified spontaneous emission \df & \sec{4lvl} \\
+\cfpd & Complex frequency plasmon dispersion \df & \sec{4lvl} \\
+\cfr & Complex frequency \df & \sec{cwcf}\\
+\cpml & Convolutional perfectly matched layer \df & \sec{lasingDynamics} \\
+\cwv & Complex wavevector \df & \sec{cwcf}\\
+\ea & Evolutionary algorithm \df & \sec{EA} \\
+\fdtd & Finite difference time domain \df & \sec{fdtd} \\
+\fft & Fast Fourier transform \df & \sec{lasingMode} \\
+\fgr & Fermi's golden rule \df & \sec{sponEmit} \\
+\ΓO & Γ optical (phonon) \df & \sec{optPhonons} \\
+\ito & Indium Tin Oxide \df & \sec{plasSLS} \\
+\KA & K acoustic (phonon) \df & \sec{optPhonons} \\
+\KO & K optical (phonon) \df & \sec{optPhonons} \\
+\LO & Longitudinal optical (phonon) \df & \sec{optPhonons} \\
+\mdf & Massless Dirac fermion \df & \sec{grIntro} \\
+\ma & Metal-air \df & \sec{hybrid} \\
+\mim & Metal-insulator-metal \df & \sec{hybrid} \\
+\mima & Metal-insulator-metal-air \df & \sec{hybrid} \\
+\npe & Non-equilibrium plasmon emission \df & \sec{npe} \\
+\rpa & Random phase approximation \df & \sec{grIntro} \\
+\sl & Stopped light \df & \sec{sllIntro} \\
+\spp & Surface plasmon polariton \df & \sec{intro} \\
+\TE & Transverse electric \df & \sec{TETM} \\
+\TM & Transverse magnetic \df & \sec{TETM} \\
+\tmd & Transition metal dichalcogenide \df & \sec{intro} \\
+\tmm & Transfer matrix method \df & \sec{introTMM} \\
+\TO & Transverse optical (phonon) \df & \sec{optPhonons} \\
+\trarpes & time resolved, angle resolved photo-emission spectroscopy \df &
+\sec{grIntro} \\
+\zgv & Zero group velocity \df & \sec{plasSLS} \\
+\end{longtable}
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\input{SymbolsList.tex}
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+\clearpage
+\addsec{Publications}
+\chaptermark{Publications}
+This thesis contains work drawn from the following publications:
+\begin{itemize}
+  \item
+   \emph{Completely Stopped and Dispersionless Light in Plasmonic Waveguides},\\
+   K.~ L.~Tsakmakidis, T.~W.~Pickering, J.~M.~Hamm, \textbf{A.~F.~Page},
+   and O.~ Hess,\\
+   Phys.~Rev.~Lett., vol.~112, p.~167401, Apr.~2014.
+  \item
+   \emph{Cavity-free plasmonic nanolasing enabled by dispersionless stopped
+   light},\\
+   T.~W.~Pickering, J.~M.~Hamm, \textbf{A.~F.~Page}, S.~Wuestner, and O.~Hess,\\
+   Nat.~Commun., vol.~5, p.~4972, Sept.~2014.
+  \item
+   \emph{Ultrafast dynamics of nanoplasmonic stopped-light lasing},\\
+   S.~Wuestner, T.~W.~Pickering, J.~M.~Hamm, \textbf{A.~F.~Page}, A.~Pusch, and
+   O.~Hess,\\
+   Faraday Discuss., vol.~178, pp.~307–324,~2015.
+  \item
+   \emph{Nonequilibrium plasmons with gain in graphene},\\
+   \textbf{A.~F.~Page}, F.~Ballout, O.~Hess, and J.~M.~Hamm,\\
+   Phys.~Rev.~B,~vol.~91, p.~75404, Feb.~2015.
+  \item
+   \emph{Nonequilibrium plasmon emission drives ultrafast carrier relaxation
+   dynamics in photoexcited graphene},\\
+   J.~M.~Hamm, \textbf{A.~F.~Page}, J.~Bravo-Abad, F.~J.~Garcia-Vidal, and
+   O.~Hess,\\
+   Phys.~Rev.~B,~vol.~93, p.~41408(R), Jan.~2016.
+\end{itemize}
+
+%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%=%%%%-%%%%-%%%%-%%%%
+
+
+\clearpage
+\chaptermark{~}
+~
+\clearpage
+\renewcommand*{\chaptermarkformat}{\defaultchaptermarkformat}

@@ -1,0 +1,108 @@
+\documentclass[
+  12pt,
+  a4paper,
+  chapterprefix=on,
+  bibliography=totoc,
+  listof=leveldown,
+  twoside=false,
+  BCOR16mm,
+  index=totoc
+]{scrbook}
+\KOMAoption{listof}{totoc}
+\setcapindent{0.85em}
+%\linespread{1.25} % 1.5 Spaced
+\linespread{1.666} % 2.0 Spaced
+
+\usepackage{multicol}
+
+\usepackage{amsmath} % AMS Math Package
+\usepackage{amsthm} % Theorem Formatting
+\usepackage{amssymb} % Math symbols such as \mathbb
+\usepackage{esint} % Integral signs
+\usepackage{mathtools}
+\usepackage{mathspec}
+\usepackage{xspace}
+\usepackage{nicefrac}
+\usepackage{csquotes}
+\usepackage{longtable}
+
+\usepackage{pdfpages}
+
+%\usepackage[inline]{showlabels} % TODONE: Remove for output.
+%\usepackage{color} %TODONE: Remove for output once all violet text is removed.
+%\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage[
+  colorlinks,
+  pdftitle={Surface Plasmon Emission and Dynamics in Active Planar Media},
+  pdfauthor={Adam Freddie Page}
+]{hyperref}
+\hypersetup{
+  linkcolor=[rgb]{0.114,0.537,0.235},
+  citecolor=[rgb]{0.114,0.537,0.235},
+   urlcolor=[rgb]{0.114,0.537,0.235}
+}
+
+\newcommand{\subeq}{\renewcommand{\theequation}{\theparentequation.\alph{equation}}}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle]{Linux Libertine O}%%
+%\setallmainfonts(Latin,Greek)[]{Linux Libertine O}
+%\setallmainfonts(Digits)[Numbers={OldStyle,Proportional}]{Linux Libertine O}
+\setmathfont{Latin Modern Math}
+%\setmathsfont(Latin)[]{Linux Libertine O}
+%\setmathsfont(Digits)[Numbers={OldStyle,Proportional}]{Linux Libertine O}
+%\setmathsfont(Greek)[Uppercase=Italic,Lowercase=Italic]{Linux Libertine O}
+%\setmathsf[]{Linux Biolinum O}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle]{Linux Libertine O}%%
+
+\newfontfamily\titlefont[Numbers=Lining]{Linux Libertine O}
+\newfontfamily\djv[]{DejaVu Sans}
+\newfontfamily\djvs[]{DejaVu Serif}
+\newfontfamily\lb[]{Linux Biolinum O}
+\addtokomafont{disposition}{\titlefont}
+\addtokomafont{pagehead}{\titlefont}
+
+\renewcommand*{\figureformat}{%
+  \figurename~\thefigure%
+%  \autodot% DELETED
+}
+\renewcommand*{\tableformat}{%
+  \tablename~\thetable%
+%  \autodot% DELETED
+}
+
+\input{Symbols.tex}
+
+\bibliographystyle{ieeetr}
+\renewcommand{\bibname}{References}
+\AfterBibliographyPreamble{\raggedright}
+
+% start of actual document 
+\begin{document}
+
+\includepdf[pages={1}]{Title.pdf}
+
+\input{Front.tex} % Front Matter
+
+\input{Intro.tex} % Chapter 1 - Introduction
+\clearpage~\clearpage
+\input{MethodsTheory.tex} % Chapter 2 - Methods
+\clearpage~\clearpage
+\input{StoppedLight.tex} % Chapter 3 - Stopped Light
+\clearpage~\clearpage
+\input{Graphene.tex} % Chapter 4 - Graphene
+\clearpage~\clearpage
+\input{Conclusion.tex} % Chapter 5 - Conclusion
+\clearpage~\clearpage
+
+\renewcommand*{\chapterformat}{}
+\appendix
+\input{Appendices.tex} % Appendices
+
+\clearpage~\clearpage
+
+\renewcommand{\v}[1]{\hacek{#1}}
+\small
+\bibliography{references}
+
+\end{document}

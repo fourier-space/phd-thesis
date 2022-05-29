@@ -1,0 +1,401 @@
+%\newcommand{\rem}[1]{} % remark
+%\newcommand{\refactor}[1]{{\color{Violet}#1}}
+%\newcommand{\removed}[1]{{\color{red}#1}}
+%\newcommand{\removed}[1]{} % hide
+
+\makeatletter
+\newcommand{\df}{
+\dotfill
+}
+\makeatother
+
+\newcommand{\fig}[1]{Fig.~\ref{fig:#1}}
+\newcommand{\Fig}[1]{Figure~\ref{fig:#1}}
+\newcommand{\figSub}[2]{Fig.~\hyperref[fig:#1]{\ref*{fig:#1}#2}}
+\newcommand{\FigSub}[2]{Figure~\hyperref[fig:#1]{\ref*{fig:#1}#2}}
+\newcommand{\figs}[2]{Figs.~\ref{fig:#1} and \ref{fig:#2}}
+\newcommand{\eq}[1]{Eq.~\ref{eq:#1}}
+\newcommand{\Eq}[1]{Equation~\ref{eq:#1}}
+\newcommand{\eqSub}[2]{Eq.~\hyperref[eq:#1]{\ref*{eq:#1}#2}}
+\newcommand{\EqSub}[2]{Equation~\hyperref[eq:#1]{\ref*{eq:#1}#2}}
+\newcommand{\seqs}[1]{Eqs.~\ref{eq:#1}} % subequations
+\newcommand{\eqs}[2]{Eqs.~\ref{eq:#1} and \ref{eq:#2}}
+\let\secant=\sec
+\renewcommand{\sec}[1]{Sec.~\ref{sec:#1}}
+\newcommand{\Sec}[1]{Section~\ref{sec:#1}}
+\newcommand{\tab}[1]{Tab.~\ref{tab:#1}}
+
+\let\hacek=\v
+\renewcommand{\v}[1]{\mathbf{#1}}
+\newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath$ #1 $}}}
+\newcommand{\grad}{\gv{\nabla}} % for gradient
+\let\divsymb=\div % rename builtin command \div to \divsymb
+\renewcommand{\div}{\gv{\nabla} \mathrlap{\,\cdot\!}{\phantom{\times}}} % for divergence
+\newcommand{\curl}{\gv{\nabla} \mathrlap{\phantom{\cdot}}{\times}} % for curl
+\newcommand{\lapl}{\nabla^2} % for gradient
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % for partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial {#2}^2}} % 2nd order pd
+\newcommand{\dd}[2]{\frac{\d #1}{\d #2}} % for total derivatives
+\newcommand{\ddd}[2]{\frac{\d^2 #1}{\d {#2}^2}} % for total derivatives
+
+%Greek
+\newcommand{\α}{\alpha}			\newcommand{\Α}{A}
+\newcommand{\β}{\beta}			\newcommand{\Β}{B}
+\newcommand{\γ}{\gamma}			\newcommand{\Γ}{\varGamma}
+\newcommand{\δ}{\delta}			\newcommand{\Δ}{\varDelta}
+\newcommand{\ε}{\varepsilon}	\newcommand{\Ε}{E}
+\newcommand{\έ}{\epsilon}	
+\newcommand{\ζ}{\zeta}			\newcommand{\Ζ}{Z}
+\newcommand{\η}{\eta}			\newcommand{\Η}{H}
+\newcommand{\θ}{\theta}			\newcommand{\Θ}{\varTheta}
+\newcommand{\ι}{\iota}			\newcommand{\Ι}{I}
+\newcommand{\κ}{\kappa}			\newcommand{\Κ}{K}
+\newcommand{\λ}{\lambda}		\newcommand{\Λ}{\varLambda}
+\newcommand{\μ}{\mu}			\newcommand{\Μ}{M}
+\newcommand{\ν}{\nu}			\newcommand{\Ν}{N}
+\newcommand{\ξ}{\xi}			\newcommand{\Ξ}{\varXi}
+\newcommand{\ο}{\omicron}		\newcommand{\Ο}{O}
+\newcommand{\π}{\pi}			\newcommand{\Π}{\varPi}
+\newcommand{\ρ}{\rho}			\newcommand{\Ρ}{P}
+\newcommand{\σ}{\sigma}			\newcommand{\Σ}{\varSigma}
+\newcommand{\τ}{\tau}			\newcommand{\Τ}{T}
+\newcommand{\υ}{\upsilon}		\newcommand{\Υ}{\varUpsilon}
+\newcommand{\φ}{\varphi}		\newcommand{\Φ}{\varPhi}
+\newcommand{\χ}{\chi}			\newcommand{\Χ}{X}
+\newcommand{\ψ}{\psi}			\newcommand{\Ψ}{\varPsi}
+\newcommand{\ω}{\omega}			\newcommand{\Ω}{\varOmega}
+
+%List of Symbols
+\newcommand{\E}{\mathbf{E}}		% Electric Field
+\newcommand{\B}{\mathbf{B}}		% Magnetic Field
+\newcommand{\D}{\mathbf{D}}		% Electric Displacement Field
+\renewcommand{\H}{\mathbf{H}}	% Magnetic H Field
+\renewcommand{\P}{\mathbf{P}}	% Polarisation Field
+\newcommand{\M}{\mathbf{M}}		% Magnetisation Field
+\renewcommand{\S}{\mathbf{S}}		% Poynting vector
+
+\newcommand{\Eme}{\mathrlap{\E}{\phantom{\D}}}		% Maxwell eq. E field
+\newcommand{\Bme}{\mathrlap{\B}{\phantom{\D}}}		% Maxwell eq. B field
+\newcommand{\Dme}{\mathrlap{\D}{\phantom{\D}}}		% Maxwell eq. D field
+\newcommand{\Hme}{\mathrlap{\H}{\phantom{\D}}}		% Maxwell eq. H field
+
+\newcommand{\J}{\mathbf{J}}		% Current Density
+%\newcommand{\ρ}{\rho}			% Charge Density
+
+\newcommand{\ħ}{\hbar}			% Dirac's Constant
+\newcommand{\εf}{\ε_0}			% Vacuum Permittivity
+\newcommand{\μf}{\μ_0}			% Vacuum Permeability
+\newcommand{\αf}{\α_0}			% Fine Structure constant
+\newcommand{\kB}{k_\textsc{b}}	% Boltzmann Constant
+
+\newcommand{\Jint}{\J_\mathrm{int}}		% Internal Current Density
+\newcommand{\ρint}{\ρ_\mathrm{int}}		% Internal Charge Density
+\newcommand{\Jext}{\J_\mathrm{ext}}		% External Current Density
+\newcommand{\ρext}{\ρ_\mathrm{ext}}		% External Charge Density
+\newcommand{\Js}{\J_\mathrm{s}}		% Internal Current Density
+
+\newcommand{\x}{\mathbf{x}}		% Position
+\renewcommand{\t}{t}		% Time
+\newcommand{\ex}{\hat{\mathbf{e}}_x} % Unit vector in z direction
+\newcommand{\ey}{\hat{\mathbf{e}}_y} % Unit vector in z direction
+\newcommand{\ez}{\hat{\mathbf{e}}_z} % Unit vector in z direction
+
+%\newcommand{\ω}{ω}				% Boson Frequency
+\newcommand{\q}{\mathbf{q}}			% Boson Wavevector
+\newcommand{\Q}{\mathbf{Q}}			% Boson Wavevector
+%\newcommand{\έ}{\varepsilon}	% Lunate epsilon - Fermion energy
+\renewcommand{\k}{\mathbf{k}}			% Fermion Wavevector
+%\newcommand{\μ}{μ}				% Fermi Level
+\newcommand{\μe}{\μ_\mathrm{e}}				% Electron Fermi Level
+\newcommand{\μh}{\μ_\mathrm{h}}				% Hole Fermi Level
+\newcommand{\μs}{\μ_s}				% Species Fermi Level
+
+\newcommand{\ωpump}{\ω_\textsc{p}} % Pump frequency
+\newcommand{\γpump}{\γ_\textsc{p}} % Pump width
+
+\newcommand{\f}{f}				% Fermi Function
+\newcommand{\T}{T}				% Temperature
+\newcommand{\Tc}{\T_\mathrm{c}}		% Carrier Temperature
+\newcommand{\Tamb}{\T_0}		% Ambient Temperature
+\newcommand{\Ns}{{N}_s}			% Species Number Density
+\newcommand{\Ne}{{N}_\mathrm{e}}	% Electron Number Density
+\newcommand{\Nh}{{N}_\mathrm{h}}	% Hole Number Density
+\newcommand{\Us}{{U}_s}			% Species Energy Density
+\newcommand{\Ue}{{U}_\mathrm{e}}	% Electron Energy Density
+\newcommand{\Uh}{{U}_\mathrm{h}}	% Hole Energy Density
+\newcommand{\nβ}{{n}_\β}	% Boson-Species Number
+\newcommand{\nβdot}{\dot{n}_\β}	% Boson-Species Net Generation Rate
+\newcommand{\nβeq}{\nβ^\mathrm{eq}}	% Boson-Species Number
+\newcommand{\nβdotrel}{\nβdot^\mathrm{rel}}	% Boson-Species relax Rate
+\newcommand{\Ndot}{\dot{N}}	% Number density net rate
+\newcommand{\Ndots}{\Ndot_s}	% Species Number density net rate
+\newcommand{\Ndote}{\Ndot_\mathrm{e}}	% Electron Number density net rate
+\newcommand{\Ndoth}{\Ndot_\mathrm{h}}	% Hole Number density net rate
+\newcommand{\Udot}{\dot{U}}	% Energy density net rate
+\newcommand{\NdotPump}{\Ndot^\mathrm{pump}}	% Number density pump rate
+\newcommand{\UdotPump}{\Udot^\mathrm{pump}}	% Energy density pump rate
+\newcommand{\NdotRel}{\Ndot^\mathrm{rel}}	% Number density relax rate
+\newcommand{\UdotRel}{\Udot^\mathrm{rel}}	% Energy density relax rate
+\newcommand{\Rβ}{R_\β}
+\newcommand{\Sβλ}{S_{\β,\λ}}
+\newcommand{\ee}{\mathrm{ee}}
+\newcommand{\hh}{\mathrm{hh}}
+\newcommand{\eh}{\mathrm{eh}}
+\newcommand{\rβλ}{r_{\β,\λ}}
+\newcommand{\rβeh}{r_{\β,\eh}}
+\newcommand{\τβ}{\τ_\β}
+\newcommand{\τpl}{\τ_\mathrm{pl}}
+\newcommand{\τph}{\τ_\mathrm{ph}}
+
+\newcommand{\ωpl}{\ω_\mathrm{pl}}		% Plasmon Frequency Solution
+\newcommand{\γpl}{\γ_\mathrm{pl}}		% Imaginary Plasmon Frequency Solution
+\newcommand{\γplemit}{\γpl^\mathrm{emit}} % Plasmon stim emission rate
+\newcommand{\γplabs}{\γpl^\mathrm{abs}}	% Plasmon absorption rate
+\newcommand{\γemit}{\γ_{\β,\λ}^\mathrm{emit}} % Plasmon stim emission rate
+\newcommand{\γabs}{\γ_{\β,\λ}^\mathrm{abs}}	% Plasmon absorption rate
+%\newcommand{\Π}{Π}							% Polarisability
+\newcommand{\Πe}{\Π^\mathrm{e}}				% Particle partial Polarisability
+\newcommand{\Πh}{\Π^\mathrm{h}}				% Hole partial Polarisability
+\newcommand{\Σemit}{{\Σ}^\mathrm{emit}} % Plasmon stim emission polarisability
+\newcommand{\Σabs}{{\Σ}^\mathrm{abs}} % Plasmon absorption polarisability
+\newcommand{\npl}{{n}_\mathrm{pl}}		% Plasmon number
+\newcommand{\Rspon}{{R}^\mathrm{spon}_\mathrm{pl}}	% Plasmon recombination rate density
+\newcommand{\Gpl}{{G}_\mathrm{pl}}	% Plasmon spectral recombination rate density
+\newcommand{\Dpl}{{D}_\mathrm{pl}}	% Plasmon density of states
+\newcommand{\Γple}{{\Γ}_\mathrm{pl}^\mathrm{e}} % Electron recombination rate
+\newcommand{\Γplh}{{\Γ}_\mathrm{pl}^\mathrm{h}} % Hole recombination rate
+
+\newcommand{\ωtil}{\tilde{\ω}}				% Scaled Boson Frequency
+\newcommand{\qtil}{\tilde{\q}}			% Scaled Boson Wavevector
+\newcommand{\qtilAbs}{\tilde{q}}			% Scaled Boson Wavevector absolute
+\newcommand{\ωtilpl}{\ωtil_\mathrm{pl}}		% Plasmon Frequency Solution
+\newcommand{\γtilpl}{\tilde{\γ}_\mathrm{pl}}		% Imaginary Plasmon Frequency Solution
+\newcommand{\μetil}{\μtil_\mathrm{e}}				% Scaled Electron Fermi Level
+\newcommand{\μhtil}{\μtil_\mathrm{h}}				% Scaled Hole Fermi Level
+\newcommand{\τtil}{\tilde{\τ}}
+\newcommand{\Gpltil}{\tilde{G}_\mathrm{pl}}
+% Scaled Plasmon spectral recombination rate density
+\newcommand{\Γpletil}{\tilde{\Γ}_\mathrm{pl}^\mathrm{e}}
+% Scaled Electron recombination rate
+\newcommand{\Γplhtil}{\tilde{\Γ}_\mathrm{pl}^\mathrm{h}}
+% Scaled Hole recombination rate
+
+\newcommand{\έtil}{\tilde{\έ}}			% Scaled Fermion Energy
+\newcommand{\έtilM}{\έtil^\textsc{m}}			% Scaled Fermion Matsubara Frequency
+\newcommand{\μtil}{\tilde{\μ}}			% Scaled Fermi Level
+\newcommand{\Ttil}{\tilde{T}}			% Scaled Temperature
+
+\newcommand{\έKO}{\έ_\textsc{ko}} % K Optical Phonon Energy
+\newcommand{\έKA}{\έ_\textsc{ka}} % K Acoustic Phonon Energy
+\newcommand{\έΓO}{\έ_{\text{г}\textsc{o}}} % Γ Optical Phonon Energy - Cyrillic
+% character
+
+\newcommand{\Etilde}{\tilde{\E}}	% Electric Field FT
+\newcommand{\Btilde}{\tilde{\B}}	% Magnetic Field FT
+\newcommand{\Dtilde}{\tilde{\D}}	% Electric Displacement FT
+\newcommand{\Htilde}{\tilde{\H}}	% Magnetic H FT
+\newcommand{\Ptilde}{\tilde{\P}}	% Polarisation FT
+\newcommand{\Mtilde}{\tilde{\M}}	% Magnetisation FT
+
+\newcommand{\EtildeAbs}{\tilde{E}}	% Electric Field Fourier Transform Abs
+\newcommand{\HtildeAbs}{\tilde{H}}	% H Field Fourier Transform Abs
+
+\newcommand{\Z}{\underline{\mathbf{Z}}} % Impedance Tensor
+\newcommand{\Y}{\underline{\mathbf{Y}}} % Admittance Tensor
+
+\newcommand{\εtens}{\underline{\gv{\ε}}}	% Permittivity Tensor
+\newcommand{\μtens}{\underline{\gv{\μ}}}	% Permittivity Tensor
+\newcommand{\εpar}{\ε}					% Parallel Permittivity
+\newcommand{\μpar}{\μ}					% Parallel Permeability
+\newcommand{\σs}{\σ_\mathrm{s}}			% Sheet Conductivity
+\newcommand{\σsinter}{\σs^\mathrm{inter}}	% Sheet Conductivity Interband
+\newcommand{\ρs}{\ρ_\mathrm{s}}			% Sheet Charge density
+
+\newcommand{\εx}{\ε_x}	% Permittivity (x)
+\newcommand{\εy}{\ε_y}	% Permittivity (y)
+\newcommand{\εz}{\ε_z}	% Permittivity (z)
+\newcommand{\μx}{\μ_x}	% Permeability (x)
+\newcommand{\μy}{\μ_y}	% Permeability (y)
+\newcommand{\μz}{\μ_z}	% Permeability (z)
+
+\newcommand{\Zf}{Z_0}	% Vacuum Impedance
+\renewcommand{\c}{c}	% Vacuum Speed of Light
+\newcommand{\Zpar}{Z}	% Parallel Wave Impedance
+\newcommand{\npar}{n}	% Parallel Refractive Index
+
+\newcommand{\vp}{v_\mathrm{p}}	% Phase Velocity
+\newcommand{\vg}{v_\mathrm{g}}	% Group Velocity
+\newcommand{\vd}{v_\mathrm{d}}	% Dispersion Velocity
+\newcommand{\up}{u_\mathrm{p}}	% Im Phase Velocity
+\newcommand{\ug}{u_\mathrm{g}}	% Im Group Velocity
+\newcommand{\ud}{u_\mathrm{d}}	% Im Dispersion Velocity
+\newcommand{\vb}{v_\mathrm{b}}	% Band Velocity
+
+\newcommand{\χe}{\χ_\mathrm{e}}	% Electric Susceptability
+\newcommand{\χm}{\χ_\mathrm{m}}	% Magnetic Susceptability
+
+\newcommand{\uTE}{Z^\textsc{te}}
+\newcommand{\uTM}{Z^\textsc{tm}}
+
+\renewcommand{\sup}{\mathrm{sup}}
+\newcommand{\sub}{\mathrm{sub}}
+\newcommand{\Mtr}{\mathcal{M}}
+
+\newcommand{\εD}{\εbg}
+\newcommand{\εinf}{\ε_\infty}
+\newcommand{\ωp}{\ω_\mathrm{p}}	% Drude plasma frequency
+\newcommand{\γp}{\γ_\mathrm{p}}	% Drude loss
+\newcommand{\ωsp}{\ω_\mathrm{sp}}	% Surface plasmon frequency.
+
+\newcommand{\vF}{v_\textsc{f}}	% Fermi velocity
+\newcommand{\εRPA}{\ε_\textsc{rpa}}
+\newcommand{\αg}{\α_\mathrm{g}}
+\newcommand{\εbar}{\bar{\ε}}
+\newcommand{\mc}{m_\mathrm{c}}	% Critical branching parameter
+
+\newcommand{\μbar}{\bar{\μ}}
+\newcommand{\Πtil}{\tilde{\Π}}
+\newcommand{\ntil}{\tilde{n}}
+\newcommand{\Gp}{G'}
+
+\newcommand{\Cn}{{\mathcal{C}_n}}
+
+\newcommand{\Δω}{\Δ_\ω} % Stopped light frequency bandwidth
+\newcommand{\Δq}{\Δ_q} % Stopped light wavevector bandwidth
+\newcommand{\qc}{q_\mathrm{c}} % High wv cutoff
+
+\newcommand{\χL}{\χ_\textsc{l}}
+\newcommand{\εL}{\ε_\textsc{l}}
+\newcommand{\εbg}{\ε_\mathrm{bg}}
+\newcommand{\ωL}{\ω_\textsc{l}}
+\newcommand{\γL}{\γ_\textsc{l}}
+\newcommand{\ΔN}{\Δ_N}
+
+%\newcommand{\χL}{\χ_\textsc{l}}
+%\newcommand{\εL}{\ε_\textsc{l}}
+%\newcommand{\εbg}{\ε_\mathrm{bg}}
+\newcommand{\ωe}{\ω_\mathrm{e}}
+\newcommand{\ωa}{\ω_\mathrm{a}}
+\newcommand{\ωpe}{\ω_\mathrm{pe}}
+\newcommand{\γe}{\γ_\mathrm{e}}
+\newcommand{\σe}{\σ_\mathrm{e}}
+\newcommand{\Eloc}{\E_\mathrm{loc}}
+\newcommand{\Pe}{\P_\mathrm{e}}
+\newcommand{\rp}{r_\mathrm{p}^0} % Electric pump rate
+%\newcommand{\ΔN}{\Δ_N}
+\newcommand{\ωpeak}{\ω_\mathrm{peak}}
+
+\newcommand{\Δt}{\Δ_t}
+\newcommand{\Δx}{\Δ_x}
+
+\newcommand{\dS}{\d\mathbf{S}}
+\newcommand{\dσ}{\d\gv{\σ}}
+\newcommand{\dl}{\d\mathbf{l}}
+\newcommand{\dV}{\d V}
+
+\renewcommand{\d}{\mathrm{d}}	% Differential d
+\renewcommand{\i}{i}			% Imaginary Unit
+%\newcommand{\δ}{δ}				% Dirac Delta Function
+%\newcommand{\θ}{θ}				% Heaviside Step Function
+\DeclareMathOperator{\FT}{\mathcal{F}}	% Fourier Transform
+\DeclareMathOperator{\PV}{\mathcal{P}}	% Principal Value
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}			% Real Part
+\DeclareMathOperator{\Res}{Res}			% Residue
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}			% Imaginary Part
+\DeclareMathOperator{\diag}{Diag}		% Diagonal Matric
+\newcommand{\one}{\text{\djv{𝟙}}}
+\newcommand{\½}{\frac{1}{2}}
+\newcommand{\crossmat}[1]{\left[ #1 \times \right]}		% Cross product matrix
+\newcommand{\TP}{\mathrm{T}}				% Transpose
+\newcommand{\cc}{\mathrm{c.c.}}				% Complex Conjugate
+\newcommand{\st}{\raisebox{-0.32 ex}{\textsuperscript{st}}\xspace}% 1st
+\newcommand{\nd}{\raisebox{-0.32 ex}{\textsuperscript{nd}}\xspace}% 2nd
+\newcommand{\rd}{\raisebox{-0.32 ex}{\textsuperscript{rd}}\xspace}% 3rd
+\renewcommand{\th}{\raisebox{-0.32 ex}{\textsuperscript{th}}\xspace}% 4th
+\DeclareMathOperator{\res}{Res}				% Residue
+\DeclareMathOperator{\arccosh}{arccosh}		% Inverse Hyperbolic Cosine
+\DeclareMathOperator{\arccot}{arccot}		% Inverse Cotangent
+\DeclareMathOperator{\Li}{Li}				% Polylog
+\DeclareMathOperator{\sinc}{sinc}			% x → Sin x / x
+\newcommand{\×}{\times}						% times
+\newcommand{\→}{\rightarrow}
+\newcommand{\reals}{\mathbb{R}}				% Set of real numbers
+
+\newcommand{\sci}[2]{{#1} \× 10^{#2}}				% Order of magnatude
+
+% Units
+\DeclareMathOperator{\eV}{eV}				% Electron Volts
+\DeclareMathOperator{\meV}{meV}				% Milli Electron Volts
+\DeclareMathOperator{\fs}{fs}				% Femtoseconds
+\DeclareMathOperator{\ps}{ps}				% Picoseconds
+\DeclareMathOperator{\s}{s}					% Picoseconds
+\DeclareMathOperator{\K}{K}					% Kelvin
+\DeclareMathOperator{\μJ}{\text{μ}J}		% Microjoule
+\DeclareMathOperator{\cm}{cm}				% Centimetre
+\DeclareMathOperator{\μm}{\text{μ}m}		% Micrometre
+\DeclareMathOperator{\nm}{nm}				% Nanometre
+
+% Subfigures.
+\newcommand{\subA}{\textbf{a}\xspace} % a
+\newcommand{\subB}{\textbf{b}\xspace} % b
+\newcommand{\subC}{\textbf{c}\xspace} % c
+\newcommand{\subD}{\textbf{d}\xspace} % d
+\newcommand{\subE}{\textbf{e}\xspace} % e
+\newcommand{\subF}{\textbf{f}\xspace} % f
+\newcommand{\subG}{\textbf{g}\xspace} % g
+\newcommand{\subH}{\textbf{h}\xspace} % h
+\newcommand{\subI}{\textbf{i}\xspace} % i
+\newcommand{\subJ}{\textbf{j}\xspace} % j
+\newcommand{\subK}{\textbf{k}\xspace} % k
+\newcommand{\subL}{\textbf{l}\xspace} % l
+\newcommand{\subM}{\textbf{m}\xspace} % m
+
+% Abbrevs,
+\newcommand{\I}{\textsc{i}\xspace} % One
+\newcommand{\II}{\textsc{ii}\xspace} % One
+\newcommand{\III}{\textsc{ii}\xspace} % One
+\newcommand{\IV}{\textsc{iv}\xspace} % One
+\newcommand{\V}{\textsc{v}\xspace} % One
+
+%\newcommand{\oned}{\textsc{1d}\xspace} % One Dimensional (1D)
+\newcommand{\twod}{\textsc{2d}\xspace} % Two Dimensional (2D)
+\newcommand{\threed}{\textsc{3d}\xspace} % Two Dimensional (3D)
+\newcommand{\threefive}{\textsc{iii-v}\xspace} % III-V (semiconductor)
+\newcommand{\ar}{\textsc{ar}\xspace} % Auger Recombination
+\newcommand{\ase}{\textsc{ase}\xspace} % Amplified Spontaneous Emission
+\newcommand{\cfpd}{\textsc{cfpd}\xspace} % Complex Frequency Plasmon Dispersion
+\newcommand{\cfr}{\textsc{cf}\xspace} % Complex frequency - ℂf
+\newcommand{\cpml}{\textsc{cpml}\xspace} % Convolutional Perfectly Matched Layer
+\newcommand{\cwv}{\textsc{cwv}\xspace} % Complex wavevector - ℂwv
+\newcommand{\ea}{\textsc{ea}\xspace} % Evolutionary Algorithm
+\newcommand{\eas}{\textsc{ea}s\xspace}
+\newcommand{\fdtd}{\textsc{fdtd}\xspace} % Finite diference time domain
+\newcommand{\fft}{\textsc{fft}\xspace} % Fast Fourier Transform
+\newcommand{\fgr}{\textsc{fgr}\xspace} % Fermi's golden rule
+\newcommand{\ΓO}{г\textsc{o}\xspace} % Γ Optical Phonon - Cyrillic character
+\newcommand{\ito}{\textsc{ito}\xspace} % Indium Tin Oxide
+\newcommand{\KA}{\textsc{ka}\xspace} % K Acoustic Phonon
+\newcommand{\KO}{\textsc{ko}\xspace} % K Optical Phonon
+\newcommand{\LO}{\textsc{lo}\xspace} % Longitudinal Optical Phonon
+\newcommand{\mdf}{\textsc{mdf}\xspace} % Massless Dirac Fermion
+\newcommand{\mdfs}{\textsc{mdf}s\xspace}
+\newcommand{\ma}{\textsc{ma}\xspace} % Metal-air
+\newcommand{\mim}{\textsc{mim}\xspace} % metal-insulator-metal
+\newcommand{\mima}{\textsc{mima}\xspace} % metal-insulator-metal-air
+\newcommand{\npe}{\textsc{npe}\xspace} % Non-equilibrium plasmon emission
+\newcommand{\rpa}{\textsc{rpa}\xspace} % Random Phase Approximation
+\renewcommand{\sl}{\textsc{sl}\xspace} % Stopped Light
+\newcommand{\spp}{\textsc{spp}\xspace} % Surface Plasmon Polariton
+\newcommand{\spps}{\textsc{spp}s\xspace}
+\newcommand{\TE}{\textsc{te}\xspace} % Transverse Magnetic
+\newcommand{\TM}{\textsc{tm}\xspace} % Transverse Magnetic
+\newcommand{\tmd}{\textsc{tmd}\xspace} % Transition metal dichalcogenide
+\newcommand{\tmds}{\textsc{tmd}s\xspace} %
+\newcommand{\tmm}{\textsc{tmm}\xspace} % Transfer Matrix Method
+\newcommand{\TO}{\textsc{to}\xspace} % Transverse Optical Phonon
+\newcommand{\trarpes}{\textsc{tr-arpes}\xspace} % photo-emission spectroscopy
+\newcommand{\zgv}{\textsc{zgv}\xspace} % Zero Group Velocity
+
+\newcommand{\phd}{\textsc{p}\raisebox{0.26ex}{ₕ}\textsc{d}\xspace}% PhD

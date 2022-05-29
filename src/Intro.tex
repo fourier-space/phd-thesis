@@ -1,0 +1,134 @@
+\chapter{Introduction} \label{sec:intro}
+
+Control over the propagation and interactions of light at the smallest
+lengthscales is the subject of the field of nano-optics.
+Whereas semiconductor based electronics has enjoyed a miniaturisation, driven by
+industry, down to nanometre scales; interactions with light on this scale are
+weak \cite{Dionne2010}.
+This is because photons can not be confined to small volumes due to the
+diffraction limit, which sets the minimum wavelength of light to be inversely
+proportional to its frequency.
+Semiconductor bandgaps are typically in the infrared frequency range, limiting
+photons of this frequency to wavelengths in the high hundreds of nanometres.
+
+\emph{Plasmonics} offers a solution to this size mismatch
+\cite{Zayats2003,Gramotnev2010}.
+Light couples to the oscillations of surface charges on a
+metal-insulator interface as a \emph{surface plasmon polariton} (\spp) mode.
+There are two primary features of \spps which make them useful in
+nano-optics applications; \spps break the diffraction limit, i.e. they have
+wavevectors larger than what is allowed for a photon of their given frequency;
+secondly they have large field enhancements at the material interface.
+The combination of shorter wavelengths and higher field densities allows for the
+interaction with the electronic systems of active media
+\cite{MacDonald2009,Hess2012},
+that is usually weak with photons.
+This allows for applications including
+biosensing \cite{Anker2008},
+plasmonic modulators \cite{Cao2009},
+photodetectors \cite{Tang2008},
+Nonlinear effects \cite{Kauranen2012},
+and quantum optics \cite{Jacob2011,Tame2013}.
+
+The simplest geometry in which to study \spps is the planar stack,
+that is slabs of material stacked in one dimension, leaving the other two
+dimensions uniform, and therefore permitting planewave solutions.
+In this way, the dynamics of waves in \twod are determined by the composition of
+the structure in the perpendicular direction.
+Planar structures have the advantage of ease of fabrication and mechanical
+stability.
+Nanoplasmonic layered structures have been shown to have applications as
+perfect lenses \cite{Pendry2000,Zhang2005a},
+behave with hyperbolic dispersion \cite{Poddubny2013},
+and offer more exotic setups such as “analogue computing” \cite{Silva2014}.
+
+Planar structures provide a starting point for more complicated geometries,
+these may be accessed by transforming the solutions using transformation optics
+\cite{Pendry2006,Leonhardt2006},
+or composing together multiple layered structures into nanopatterned
+arrays \cite{Radko2009,Davies2013}, or devices \cite{Dionne2009}.
+
+Layers in planar structures can be taken to the limiting case of
+\emph{two-dimensional} (\twod) materials \cite{Novoselov2005a}.
+These are molecularly thin layers, with heights of only a few atoms.
+Materials in this class include
+graphene \cite{Novoselov2004},
+\emph{transition metal dichalcogenides} (\tmds) \cite{Mak2010},
+and hexagonal boron nitride \cite{Nagashima1995},
+which are the \twod equivalent of a metal, semiconductor, and insulator
+respectively \cite{Bharadwaj2015}.
+These materials are significant as they allow structures to be built where, not
+only is the light itself confined on a subwavelength scale, but the materials
+themselves are too.
+
+Two questions on the subject of active nanoplasmonics are considered in this
+thesis.
+The first concerns \emph{stopped light}.
+By controlling the dispersion relation of light in a plasmonic waveguide such
+that energy is brought to rest at zero group velocity within a gain medium, can
+a regime of lasing be entered without a cavity storing the light in a resonant
+mode?
+
+Secondly;
+If graphene is optically pumped such that its carriers enter a state of
+inversion, are plasmon modes supported and can the inversion compensate for any
+material losses and lead to amplification of the plasmons?
+
+Though seemingly disjoint, these questions are related by the approach one takes
+to answer them.
+In both systems plasmons are coupled to an inverted electronic system in order
+to induce the stimulated amplification that is to compensate for material
+losses.
+Analysis of the amplification requires the exact calculation of the plasmon
+dispersion relation in a complex frequency picture, which describes the losses
+and gains in time.
+
+The problems differ in key areas too.
+For stopped light gain is provided by a
+single transition of a \threefive semiconductor modelled as a four-level system,
+whereas gain in graphene is provided by a continuum of electron states within
+the graphene sheet itself.
+This means graphene is host to broadband spontaneous emission, whereas all
+emission in stopped light is monochromatic around the lasing frequency.
+Finally, Stopped light structures host surface plasmon polaritons, that retain
+a degree of photonic character and with the potential of outcoupling.
+Graphene on the other hand hosts plasmons, which are the short wavelength limit.
+Their character is more Coulombic than photonic, and the material response must
+be considered to include nonlocal effects.
+
+The stopped light lasing question is approached by designing a structure
+which supports a single-frequency low-dispersion stopped light band.
+The band is optimised to support a broad range of wavevectors, allowing
+energy to be confined to narrow widths.
+Then by examining the frequency domain characteristics of an optimised
+structure, the parameters for a gain medium are selected.
+Time domain simulations are then conducted to examine the transition from
+amplified spontaneous emission to lasing, and to explain the lasing dynamics.
+
+In order to get a handle on the dynamics of plasmons in graphene, the complex
+frequency plasmon dispersion relation must be solved for exactly within the
+random phase approximation framework.
+A formalism is developed for determining polarisabilities of graphene with
+nonequilibrium electron distributions.
+Plasmon dispersion relations are calculated for graphene in a state of
+photoinverted quasiequilibrium.
+The formalism is to include the effects of Drude collision loss, finite
+temperature and doping by impurities as each of these effects will seek to
+reduce the gain available.
+Finally a dynamic study of the carrier system relaxation, coupled to spontaneous
+and stimulated plasmon and phonon emission is conducted.
+
+The thesis is in five chapters:
+The first, this overarching introduction, sets the scope of the two main
+questions in a context of active planar nanoplasmonics.
+Chapter 2 contains theory of classical electromagnetism in homogeneous media
+leading to a frequency domain analysis of waveguides.
+The finite difference time domain method is introduced to complement and go
+beyond the frequency domain analysis.
+Finally the evolutionary algorithm method of optimisation is introduced in the
+context of plasmonic waveguides.
+Chapters 3 and 4 are the main content chapters, each with their own
+introduction, literature, and conclusion, on the topics of
+\emph{stopped light lasing} and
+\emph{plasmons in nonequilibrium graphene} respectively.
+Chapter 5 concludes the thesis in a unifying context and offers an outlook.

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="fig template.svg"
+   inkscape:version="0.48.5 r10040"
+   version="1.1"
+   id="svg2"
+   height="515.55115"
+   width="515.55115">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="504.41801"
+     inkscape:cy="302.17603"
+     inkscape:document-units="px"
+     inkscape:current-layer="svg2"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     borderlayer="true"
+     units="mm"
+     inkscape:snap-bbox="false"
+     inkscape:object-nodes="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-page="true"
+     inkscape:snap-nodes="true"
+     inkscape:bbox-nodes="false"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="21.4813px"
+       spacingy="6.0625mm"
+       dotted="false"
+       units="mm"
+       originy="0cm" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       dotted="true"
+       units="px"
+       originy="0px"
+       spacingx="5.3703px"
+       spacingy="5.3703px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient164280"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop164282" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-536.80958)">
+    <g
+       style="stroke-linecap:round"
+       id="use9074"
+       transform="matrix(0.83334188,0,0,0.51571003,9.746401,343.43343)" />
+    <g
+       ns0:text="\\begin{equation*}\n(E_{y 0}, Z_0 H_{x 0})\n\\end{equation*}"
+       ns0:preamble="/home/afp11/.config/inkscape/extensions/textext.pre"
+       transform="matrix(1.2,0,0,1.2,-5.4276035,928.2419)"
+       id="g6451">
+      <defs
+         id="defs6453" />
+      <g
+         id="g6493">
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6495">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-0"
+             x="366.87299"
+             y="134.765"
+             id="use6497" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6499">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-2"
+             x="370.74701"
+             y="134.765"
+             id="use6501" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6503">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-6"
+             x="378.10199"
+             y="136.259"
+             id="use6505" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6507">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-8"
+             x="382.392"
+             y="136.259"
+             id="use6509" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6511">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-3"
+             x="386.862"
+             y="134.765"
+             id="use6513" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6515">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-4"
+             x="391.29337"
+             y="134.765"
+             id="use6517" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6519">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-8"
+             x="398.09"
+             y="136.259"
+             id="use6521" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6523">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-5"
+             x="402.56"
+             y="134.765"
+             id="use6525" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6527">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-7"
+             x="410.841"
+             y="136.259"
+             id="use6529" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6531">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-8"
+             x="415.35901"
+             y="136.259"
+             id="use6533" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g6535">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-ff3f8a0a-1"
+             x="419.828"
+             y="134.765"
+             id="use6537" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g62448"
+       transform="matrix(1.2,0,0,1.2,-308.77753,769.17215)"
+       ns0:preamble="/home/afp11/.config/inkscape/extensions/textext.pre"
+       ns0:text="\\begin{equation*}\n\\sigma_2\n\\end{equation*}">
+      <defs
+         id="defs62450" />
+      <g
+         id="g62462">
+        <g
+           id="g62464"
+           style="fill:#000000;fill-opacity:1">
+          <use
+             id="use62466"
+             y="134.765"
+             x="390.207"
+             xlink:href="#textext-54ed0b7c-0"
+             width="467.71652"
+             height="240.94487" />
+        </g>
+        <g
+           id="g62468"
+           style="fill:#000000;fill-opacity:1">
+          <use
+             id="use62470"
+             y="136.259"
+             x="395.89899"
+             xlink:href="#textext-54ed0b7c-1"
+             width="467.71652"
+             height="240.94487" />
+        </g>
+      </g>
+    </g>
+    <g
+       ns0:text="\\begin{equation*}\n\\sigma_2\n\\end{equation*}"
+       ns0:preamble="/home/afp11/.config/inkscape/extensions/textext.pre"
+       transform="matrix(1.2,0,0,1.2,-308.77753,847.12415)"
+       id="g62472">
+      <defs
+         id="defs62474" />
+      <g
+         id="g62486">
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g62488">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-54ed0b7c-0"
+             x="390.207"
+             y="134.765"
+             id="use62490" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g62492">
+          <use
+             height="240.94487"
+             width="467.71652"
+             xlink:href="#textext-54ed0b7c-1"
+             x="395.89899"
+             y="136.259"
+             id="use62494" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g6607"
+     transform="translate(48.157991,-0.87757408)">
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path2986"
+       d="m 488.872,601.13675 256.61878,0"
+       style="fill:none;stroke:#5d6d71;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       transform="translate(0,-584.64423)" />
+    <rect
+       style="fill:#1d893c;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect65475"
+       width="9.7440004"
+       height="9.7443781"
+       x="488.87201"
+       y="606.00854"
+       transform="translate(0,-584.64423)" />
+    <rect
+       y="620.62457"
+       x="488.87201"
+       height="9.7443781"
+       width="9.7440004"
+       id="rect65477"
+       style="fill:#96b398;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       transform="translate(0,-584.64423)" />
+    <rect
+       style="fill:#ec6a0f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect65479"
+       width="9.7440004"
+       height="9.7443781"
+       x="488.87201"
+       y="635.24054"
+       transform="translate(0,-584.64423)" />
+    <rect
+       y="649.85657"
+       x="488.87201"
+       height="9.7443781"
+       width="9.7440004"
+       id="rect65481"
+       style="fill:#d9e5e8;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       transform="translate(0,-584.64423)" />
+    <rect
+       style="fill:#5d6d71;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect65483"
+       width="9.7440004"
+       height="9.7443781"
+       x="488.87201"
+       y="664.47253"
+       transform="translate(0,-584.64423)" />
+    <rect
+       y="679.08856"
+       x="488.87201"
+       height="9.7443781"
+       width="9.7440004"
+       id="rect100013"
+       style="fill:#9cafb3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       transform="translate(0,-584.64423)" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text21298"
+       y="29.108521"
+       x="503.48801"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+       xml:space="preserve"><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+         y="29.108521"
+         x="503.48801"
+         id="tspan21300"
+         sodipodi:role="line">Primary Element - 50, 75, 145 - #1d893c</tspan><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+         y="44.108521"
+         x="503.48801"
+         sodipodi:role="line"
+         id="tspan53599">Secondary Element - 70, 25, 145 - #96b398</tspan><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+         y="59.108521"
+         x="503.48801"
+         sodipodi:role="line"
+         id="tspan53601">Accent Element - 60, 80, 55 - #ec6a0f</tspan><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+         y="74.108521"
+         x="503.48801"
+         sodipodi:role="line"
+         id="tspan53605">Light Grey Element - 90, 5, 220 - #d9e5e8</tspan><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+         y="89.108521"
+         x="503.48801"
+         sodipodi:role="line"
+         id="tspan37246">Grey Line - 45, 15, 220 - #5d6d71</tspan><tspan
+         id="tspan100011"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+         y="104.10852"
+         x="503.48801"
+         sodipodi:role="line">Light Grey Line - 70, 10, 220 - #9cafb3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+       x="488.87201"
+       y="11.620522"
+       id="text21302"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan21304"
+         x="488.87201"
+         y="11.620522"
+         style="font-size:12px">L, S<tspan
+   id="tspan21306"
+   style="font-size:65.00091553%;baseline-shift:sub">ab</tspan>, H<tspan
+   id="tspan21310"
+   style="font-size:65.00091553%;baseline-shift:sub">ab</tspan> (D65) - #RrGgBb</tspan></text>
+  </g>
+</svg>
