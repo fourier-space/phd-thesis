@@ -10,3 +10,6 @@ and during my time as a Research Associate I have made minor updates, using the 
 [future work](https://scholar.google.com/citations?user=OSjycdYAAAAJ&hl=en).
 
 -- A. Freddie Page
+
+## Build
+The thesis is built in XeTeX, from `src/document.tex`.
